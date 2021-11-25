@@ -1,4 +1,4 @@
-# youtube-set - API Settings for YouTube plugin
+# youtube-set - API Settings for plugin.video.youtube
 
 Dependencies: `zenity`
 
