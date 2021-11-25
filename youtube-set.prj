@@ -11,7 +11,9 @@ release=0.mrx8
 group=Applications/Internet
 
 [DESCRIPTION]
-0=Youtube API Settings
+0=The GUI is designed to easily configure the YouTube plugin >= v6.8.16 (Kodi-18/19) and enter the
+1=necessary data into the configuration file: ~/.kodi/userdata/addon_data/plugin.video.youtube/settings.xml.
+2=The launch shortcut is located in Menu-Audio-Video-YouTube API Settings.
 
 [MAINTAINER]
 maintainer=Alex Kotov
@@ -20,10 +22,10 @@ maintainer=Alex Kotov
 vendor=alex_q_2000 (C) 2021
 
 [SUMMARY]
-summary=Youtube API Settings
+summary=API Settings for plugin.video.youtube
 
 [URLCOPY]
-urlcopy=111
+urlcopy=https://github.com/AKotov-dev/youtube-set
 
 [LICENSE]
 license=GPLv3
@@ -47,18 +49,6 @@ deb=1
 0=/usr/bin/youtube-set.sh
 1=/usr/share/applications/youtube-set.desktop
 2=/usr/share/icons/youtube-set.png
-
-[AFTERINSTALL]
-0=#ldconfig
-1=#update-desktop-database -q /usr/share/applications
-2=#update-mime-database /usr/share/mime
-3=#gtk-update-icon-cache -q -f /usr/share/icons/hicolor
-
-[AFTERREMOVE]
-0=#ldconfig
-1=#update-desktop-database -q /usr/share/applications
-2=#update-mime-database /usr/share/mime
-3=#gtk-update-icon-cache -q -f /usr/share/icons/hicolor
 
 [URL32]
 url32=
