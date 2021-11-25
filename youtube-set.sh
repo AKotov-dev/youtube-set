@@ -12,8 +12,6 @@ row=$(zenity --forms --separator=" " --title="YouTube API Settings" --text="Inpu
 akey=$(echo $row | awk '{ print $1 }'); cid=$(echo $row | awk '{ print $2 }')
 csec=$(echo $row | awk '{ print $3 }')
 
-sed -i 's/<setting id="youtube.api.key">.*/<setting id="youtube.api.key">'$akey'<\/setting>/g' "$fname"
-sed -i 's/<setting id="youtube.api.id">.*/<setting id="youtube.api.id">'$cid'<\/setting>/g' "$fname"
-sed -i 's/<setting id="youtube.api.secret">.*/<setting id="youtube.api.secret">'$csec'<\/setting>/g' "$fname"
-
-exit;
+sed -i 's/<setting id="youtube.api.key".*/<setting id="youtube.api.key">'$akey'<\/setting>/g' "$fname"
+sed -i 's/<setting id="youtube.api.id".*/<setting id="youtube.api.id">'$cid'<\/setting>/g' "$fname"
+sed -i 's/<setting id="youtube.api.secret".*/<setting id="youtube.api.secret">'$csec'<\/setting>/g' "$fname"
