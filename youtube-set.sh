@@ -15,3 +15,5 @@ csec=$(echo $row | awk '{ print $3 }')
 sed -i 's/<setting id="youtube.api.key">.*/<setting id="youtube.api.key">'$akey'<\/setting>/g' "$fname"
 sed -i 's/<setting id="youtube.api.id">.*/<setting id="youtube.api.id">'$cid'<\/setting>/g' "$fname"
 sed -i 's/<setting id="youtube.api.secret">.*/<setting id="youtube.api.secret">'$csec'<\/setting>/g' "$fname"
+
+exit;
