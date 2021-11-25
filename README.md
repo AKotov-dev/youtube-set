@@ -1,4 +1,4 @@
-# youtube-set - Client API Settings for YouTube plugin (Kodi-19)
+# youtube-set - API Settings for YouTube plugin (Kodi-19)
 
 Dependencies: zenity
 
