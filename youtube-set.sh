@@ -7,12 +7,14 @@
 #Language select
 case $LANG in
      ru_RU.UTF-8)
-          str=('plugin.video.youtube не установлен!' 'Входные данные' \
+          str=('plugin.video.youtube не установлен!' \
+          'Настройки YouTube API для Kodi' \
           'Настройки API plugin.video.youtube сохранены в файл:' \
           'Пустые значения недопустимы!')
           ;;
      *)
-          str=('The plugin.video.youtube not installed!' 'Input data' \
+          str=('The plugin.video.youtube not installed!' \
+          'YouTube API Settings for Kodi' \
           'The API settings of the plugin.video.youtube saved in the file:' \
           'Empty values are not allowed!')
           ;;
@@ -28,7 +30,7 @@ if [[ ! -f "$fname" ]]; then
 fi;
 
 #Getting a string of parameters
-row=$(zenity --forms --title="YouTube API Settings" --text="${str[1]}" \
+row=$(zenity --forms --title="" --text="${str[1]}" \
    --add-entry="API_Key" \
    --add-entry="Client_ID" \
    --add-entry="Client_Secret")
