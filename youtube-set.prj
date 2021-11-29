@@ -2,7 +2,7 @@
 name=youtube-set
 
 [VERSION]
-version=0.1
+version=0.2
 
 [RELEASE]
 release=0.mrx8
@@ -13,7 +13,7 @@ group=Applications/Internet
 [DESCRIPTION]
 0=The GUI is designed to easily configure the YouTube plugin >= v6.8.16 (Kodi-18/19) and enter the
 1=necessary data into the configuration file: ~/.kodi/userdata/addon_data/plugin.video.youtube/settings.xml.
-2=The launch shortcut is located in Menu-Audio-Video-YouTube API Settings.
+2=The launch shortcut is located in Menu-Audio-Video-YouTube API Setting.
 
 [MAINTAINER]
 maintainer=Alex Kotov
@@ -22,7 +22,7 @@ maintainer=Alex Kotov
 vendor=alex_q_2000 (C) 2021
 
 [SUMMARY]
-summary=API Settings for plugin.video.youtube
+summary=API Setting for plugin.video.youtube
 
 [URLCOPY]
 urlcopy=https://github.com/AKotov-dev/youtube-set
@@ -49,18 +49,31 @@ deb=1
 0=/usr/bin/youtube-set.sh
 1=/usr/share/applications/youtube-set.desktop
 2=/usr/share/icons/youtube-set.png
+3=/usr/share/doc/youtube-set/
 
 [URL32]
-url32=
+url32=https://github.com/AKotov-dev/youtube-set
 
 [URL64]
 url64=
 
 [PROGRAMNAME]
-programname=
+programname=youtube-set
 
 [DEVTOOL]
-devtool=
+devtool=Zenity
 
 [TOOLVERSION]
-toolversion=
+toolversion=3.32.0
+
+[INFO]
+0=A small GUI on Zenity for easy input of settings API (keys) the plugin.video.youtube. In the latest versions of the plug-in for watching YouTube (>=6.8.16), the form of advanced API settings was removed. However, even before it was inconvenient to enter keys with a length of more than 70 characters in full-screen mode + sometimes you need to change them.
+1=
+2=Designed in the form of RPM and DEB packages (noarch/all); the launch shortcut after installation is in the Menu->Audio and Video->YouTube API Settings.
+3=
+4=GitHub: https://github.com/AKotov-dev/youtube-set
+5=How to create a personal API key: https://balagur.blogspot.com/2020/02/youtube-xbmc-kodi.html
+6=
+7=v0.2-0 - added repack.txt
+8=
+9=v0.1-0 - initial version
